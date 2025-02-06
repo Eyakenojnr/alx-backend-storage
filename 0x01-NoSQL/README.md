@@ -20,22 +20,6 @@
 * How to insert/update/delete information from a NoSQL database
 * How to use MongoDB
 
-## Requirements
-### MongoDB Command File
-* All files are interpreted/compiled on Ubuntu 18.04 LTS using `MongoDB` (version 4.2)
-* All files ends with a new line
-* The first line of all files is a comment: `// my comment`
-* A `README.md` file at the root of the folder of the project
-### Python Scripts
-* All files will are interpreted/compiled on Ubuntu 18.04 LTS using `python3` (version 3.7) and `PyMongo` (version 3.10)
-* All files end with a new line
-* The first line of all files is `#!/usr/bin/env python3`
-* A `README.md` file at the root of the folder of the project
-* All code uses `pycodestyle` style _(version 2.5.*)_
-* All modules have a documentation (`python3 -c 'print(__import__("my_module").__doc__)'`)
-* All functions have a documentation (`python3 -c 'print(__import__("my_module").my_function.__doc__)'`)
-* Codes are not executed when imported (by using `if __name__ == "__main__"`:)
-
 ## More Info
 ### Installing MongoDB 4.2 in Ubuntu 18.04
 [Official installation guide](https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/)
@@ -69,8 +53,7 @@ Potential issue if documents creation doesn’t work or this error: `Data direct
 ```
 $ sudo mkdir -p /data/db
 ```
-Or if `/etc/init.d/mongod` is missing, please find here an example of the file:
-Click to expand/hide file contents
+Or if `/etc/init.d/mongod` is missing, please find [here](https://github.com/Eyakenojnr/alx-backend-storage/blob/master/0x01-NoSQL/mongod) an example of the file.
 ### Using "container-on-demand" to run MongoDB
 * Ask for container `Ubuntu 18.04 - MongoDB`
 * Connect via SSH
